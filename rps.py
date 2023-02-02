@@ -3,7 +3,7 @@ import random
 import os
 import re
 
-#function to check if the user wants to play
+#1st function to check if the user wants to play
 
 #while the response is True
 
@@ -17,4 +17,14 @@ import re
 
 #Except value error as err and print err
  
- 
+#2nd func for playing the game var = True
+
+#While  var: use os and print rps + ask user what they'll use
+
+#if not an option then ask them to put correct option + continue
+
+#print users choice using f str
+
+#2 var 1st is playing options / 2nd random choice
+
+#print computer choice
