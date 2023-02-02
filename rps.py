@@ -26,7 +26,8 @@ def play_status():
         except ValueError as err:
             print(err)
 #2nd func for playing the game var = True
-
+def play_game():
+    play = True
 #While  var: use os and print rps + ask user what they'll use
 
 #if not an option using re then ask them to put correct option + continue
