@@ -34,8 +34,11 @@ def play_game():
         print('')
         print('Rock, Paper, Scissors -> SHOOT!')
         user_pick = input('Chose your weapon ''[R]ock, [P]aper, [S]cissors: ')
-#if not an option using re then ask them to put correct option + continue
-
+        #if not an option using re then ask them to put correct option + continue
+        if not re.match("[SsRrPp]", user_pick):
+            print('Please chose a letter:')
+            print('[R]ock, [P]aper, or [S]cissors ')
+            continue
 #print users choice using f str
 
 #2 var 1st is playing options / 2nd random choice
