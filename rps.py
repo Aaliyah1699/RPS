@@ -11,8 +11,9 @@ def play_status():
         #Try a response to see if they want to play again
         try:
             response = input('Do you want to play again?  (yes or no): ')
-#if they say something other than yes/ no raise value error with their options
-
+            #if they say something other than yes/ no raise value error with their options
+            if response.lower() not in valid_resopnse:
+                raise ValueError('Yes or No only')
 #if their answer is yes return True
 
 #else use os to clear and exit game
