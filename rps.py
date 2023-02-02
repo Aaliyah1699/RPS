@@ -14,10 +14,14 @@ def play_status():
             #if they say something other than yes/ no raise value error with their options
             if response.lower() not in valid_resopnse:
                 raise ValueError('Yes or No only')
-#if their answer is yes return True
-
-#else use os to clear and exit game
-
+            #if their answer is yes return True
+            if response.lower() == 'yes':
+                return True
+            #else use os to clear and exit game
+            else:
+                os.system('cls' if os.name == 'nt' else 'clear')
+                print('Thanks for playing!')
+                exit()
 #Except value error as err and print err
         except ValueError as err:
             print(err)
