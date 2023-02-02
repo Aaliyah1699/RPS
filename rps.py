@@ -46,6 +46,15 @@ def play_game():
         ran_choice = random.choice(choices)
         #print computer choice
         print(f'I chose: {ran_choice}')
+        #if both picks are the same print tie
+        if ran_choice == user_pick.upper():
+            print('TIE!')
+            play = play_status() #ask if they still want to play referring to first func
+        #elif ran wins with rock
+        elif ran_choice == 'R' and user_pick.upper() == 'S':
+            print('Rock beats Scissors, I win!')
+            play = play_status()
+
 #Execute code if file is ran directly not imported
 if __name__ == '__main__':
     play_game()
