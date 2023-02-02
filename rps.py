@@ -39,10 +39,11 @@ def play_game():
             print('Please chose a letter:')
             print('[R]ock, [P]aper, or [S]cissors ')
             continue
-#print users choice using f str
-
-#2 var 1st is playing options / 2nd random choice
-
+        #print users choice using f str
+        print(f'You chose: {user_pick}')
+        #2 var 1st is playing options / 2nd random choice
+        choices = ['R', 'P', 'S']
+        ran_choice = random.choice(choices)
 #print computer choice
 
 #Execute code if file is ran directly not imported
