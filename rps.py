@@ -54,6 +54,10 @@ def play_game():
         elif ran_choice == 'R' and user_pick.upper() == 'S':
             print('Rock beats Scissors, I win!')
             play = play_status()
+        #ran wins with scissors
+        elif ran_choice == 'S' and user_pick.upper() == 'P':
+            print('Scissors beat Paper, I win!')
+            play = play_status()
 
 #Execute code if file is ran directly not imported
 if __name__ == '__main__':
