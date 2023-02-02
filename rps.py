@@ -28,8 +28,12 @@ def play_status():
 #2nd func for playing the game var = True
 def play_game():
     play = True
-#While  var: use os and print rps + ask user what they'll use
-
+    #While  var: use os and print rps + ask user what they'll use
+    while play:
+        os.system('cls' if os.name = 'nt' else 'clear')
+        print('')
+        print('Rock, Paper, Scissors -> SHOOT!')
+        user_pick = input('Chose your weapon ''[R]ock, [P]aper, [S]cissors: ')
 #if not an option using re then ask them to put correct option + continue
 
 #print users choice using f str
