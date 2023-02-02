@@ -44,8 +44,8 @@ def play_game():
         #2 var 1st is playing options / 2nd random choice
         choices = ['R', 'P', 'S']
         ran_choice = random.choice(choices)
-#print computer choice
-
+        #print computer choice
+        print(f'I chose: {ran_choice}')
 #Execute code if file is ran directly not imported
 if __name__ == '__main__':
     play_game()
