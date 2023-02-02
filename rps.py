@@ -22,7 +22,7 @@ def play_status():
                 os.system('cls' if os.name == 'nt' else 'clear')
                 print('Thanks for playing!')
                 exit()
-#Except value error as err and print err
+        #Except value error as err and print err
         except ValueError as err:
             print(err)
 #2nd func for playing the game var = True
@@ -36,3 +36,7 @@ def play_status():
 #2 var 1st is playing options / 2nd random choice
 
 #print computer choice
+
+#Execute code if file is ran directly not imported
+if __name__ == '__main__':
+    play_game()
