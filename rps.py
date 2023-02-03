@@ -7,14 +7,14 @@ import re
 
 
 def play_status():
-    valid_resopnse = ['yes', 'no']
+    valid_response = ['yes', 'no']
     # while the response is True
     while True:
         # Try a response to see if they want to play again
         try:
             response = input('Do you want to play again?  (yes or no): ')
             # if they say something other than yes/ no raise value error with their options
-            if response.lower() not in valid_resopnse:
+            if response.lower() not in valid_response:
                 raise ValueError('Yes or No only')
             # if their answer is yes return True
             if response.lower() == 'yes':
@@ -34,7 +34,7 @@ def play_game():
     play = True
     # While  var: use os and print rps + ask user what they'll use
     while play:
-        os.system('cls' if os.name='nt' else 'clear')
+        os.system('cls' if os.name == 'nt' else 'clear')
         print('')
         print('Rock, Paper, Scissors -> SHOOT!')
         user_pick = input('Chose your weapon ''[R]ock, [P]aper, [S]cissors: ')
